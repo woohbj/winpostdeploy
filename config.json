@@ -1,0 +1,46 @@
+{
+  "domain": {
+    "name": "cogniwave.cn",
+    "ouPath": "OU=Workstations,OU=Devices,DC=cogniwave,DC=cn",
+    "credentialPath": "D:\\DesktopInit\\Credentials\\domain-join.credential.xml"
+  },
+  "allowManualComputerNameInput": true,
+  "rebootAfterDomainJoin": true,
+  "logSharePath": "",
+  "software": [
+    {
+      "name": "Bitdefender",
+      "enabled": false,
+      "installer": "D:\\DesktopInit\\Installers\\Bitdefender\\setup.exe",
+      "arguments": "/quiet /norestart",
+      "checkType": "service",
+      "checkValue": "bdservicehost"
+    },
+    {
+      "name": "Ingressed-AC",
+      "enabled": false,
+      "installer": "D:\\DesktopInit\\Installers\\IngressedAC\\setup.exe",
+      "arguments": "/quiet /norestart",
+      "checkType": "none",
+      "checkValue": ""
+    },
+    {
+      "name": "IPG",
+      "enabled": false,
+      "installer": "D:\\DesktopInit\\Installers\\IPG\\setup.exe",
+      "arguments": "/quiet /norestart",
+      "checkType": "none",
+      "checkValue": ""
+    }
+  ],
+  "cleanup": {
+    "enabled": false,
+    "emptyRecycleBin": true,
+    "relativePaths": [
+      "Config",
+      "Credentials",
+      "Installers",
+      "hostname_map.csv"
+    ]
+  }
+}
